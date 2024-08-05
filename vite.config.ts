@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       // 正则表达式写法
-      '^/(test)': {
+      '^/(test|testpost|stream)': {
         target: 'http://127.0.0.1:8100',
         changeOrigin: true,
       },
